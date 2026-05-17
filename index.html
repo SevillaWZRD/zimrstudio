@@ -3,75 +3,47 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MDB Loodgieters Purmerend | 24/7 Spoedservice</title>
-<meta name="description" content="MDB Loodgieters in Purmerend. 24 uur per dag bereikbaar voor lekkages, ontstoppingen en sanitair. 5-sterren reviews. Bel direct.">
+<title>ZIMR Studio | Websites voor vakmensen</title>
+<meta name="description" content="ZIMR Studio bouwt professionele websites voor vakmensen in Nederland. Live binnen 7 dagen, eenmalig €795. Geen abonnementen.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   :root {
-    --navy: #0a1628;
-    --navy-deep: #050d1a;
-    --blue: #1e6fd9;
-    --blue-bright: #3b8eff;
-    --cream: #f5f1e8;
-    --cream-warm: #ebe4d2;
-    --orange: #ff6b35;
-    --gray: #6b7888;
+    --black: #0a0a0a;
+    --white: #fafaf9;
+    --gray-100: #f3f2ef;
+    --gray-200: #e8e6e1;
+    --gray-400: #9c9890;
+    --gray-600: #5c5850;
+    --accent: #2563eb;
+    --accent-light: #3b82f6;
+    --green: #16a34a;
   }
   html { scroll-behavior: smooth; }
   body {
-    font-family: 'Inter Tight', sans-serif;
-    background: var(--cream);
-    color: var(--navy);
-    line-height: 1.55;
+    font-family: 'Manrope', sans-serif;
+    background: var(--white);
+    color: var(--black);
+    line-height: 1.6;
     overflow-x: hidden;
-  }
-
-  /* TOP BAR */
-  .topbar {
-    background: var(--navy);
-    color: var(--cream);
-    padding: 8px 0;
-    font-size: 13px;
-  }
-  .topbar-inner {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 24px;
-    flex-wrap: wrap;
-  }
-  .topbar-left { display: flex; gap: 20px; align-items: center; }
-  .topbar-left span { display: flex; align-items: center; gap: 6px; opacity: 0.85; }
-  .pulse {
-    width: 8px; height: 8px; border-radius: 50%;
-    background: #4ade80;
-    box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.7);
-    animation: pulse 2s infinite;
-  }
-  @keyframes pulse {
-    0% { box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.7); }
-    70% { box-shadow: 0 0 0 8px rgba(74, 222, 128, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(74, 222, 128, 0); }
   }
 
   /* NAV */
   nav {
-    background: rgba(245, 241, 232, 0.92);
-    padding: 20px 0;
-    border-bottom: 1px solid rgba(10, 22, 40, 0.08);
-    position: sticky;
+    padding: 24px 0;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 100;
+    background: rgba(250, 250, 249, 0.85);
     backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
   }
   .nav-inner {
-    max-width: 1280px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
     display: flex;
@@ -79,1479 +51,754 @@
     align-items: center;
   }
   .logo {
-    font-family: 'Fraunces', serif;
-    font-size: 26px;
-    font-weight: 800;
+    font-family: 'Instrument Serif', serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--black);
+    text-decoration: none;
     letter-spacing: -0.02em;
-    color: var(--navy);
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
   }
-  .logo-mark {
-    width: 36px; height: 36px;
-    background: var(--navy);
-    color: var(--cream);
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    font-weight: 800;
-  }
-  .nav-links { display: flex; gap: 32px; align-items: center; }
-  .nav-links a {
-    color: var(--navy);
+  .logo span { color: var(--accent); }
+  .nav-right { display: flex; gap: 32px; align-items: center; }
+  .nav-right a {
+    color: var(--gray-600);
     text-decoration: none;
+    font-size: 14px;
     font-weight: 500;
-    font-size: 15px;
     transition: color 0.2s;
   }
-  .nav-links a:hover { color: var(--blue); }
+  .nav-right a:hover { color: var(--black); }
   .nav-cta {
-    background: var(--navy);
-    color: var(--cream) !important;
-    padding: 12px 22px;
-    border-radius: 100px;
+    background: var(--black) !important;
+    color: var(--white) !important;
+    padding: 10px 20px;
+    border-radius: 8px;
     font-weight: 600 !important;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    transition: transform 0.2s, background 0.2s;
+    transition: opacity 0.2s;
   }
-  .nav-cta:hover {
-    background: var(--blue);
-    color: white !important;
-    transform: translateY(-1px);
-  }
-  .mobile-toggle { display: none; }
+  .nav-cta:hover { opacity: 0.85; }
 
   /* HERO */
   .hero {
-    padding: 80px 24px 100px;
-    max-width: 1280px;
+    padding: 180px 24px 120px;
+    max-width: 1200px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1.1fr 1fr;
-    gap: 60px;
-    align-items: center;
-    position: relative;
+    text-align: center;
   }
-  .hero-eyebrow {
+  .hero-badge {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
-    background: rgba(30, 111, 217, 0.08);
-    color: var(--blue);
+    gap: 8px;
+    background: rgba(37, 99, 235, 0.08);
+    color: var(--accent);
     padding: 8px 16px;
     border-radius: 100px;
     font-size: 13px;
     font-weight: 600;
-    margin-bottom: 24px;
-    letter-spacing: 0.02em;
+    margin-bottom: 32px;
+  }
+  .hero-badge-dot {
+    width: 6px; height: 6px;
+    background: var(--green);
+    border-radius: 50%;
   }
   .hero h1 {
-    font-family: 'Fraunces', serif;
-    font-size: clamp(48px, 6vw, 80px);
-    font-weight: 800;
-    line-height: 0.98;
+    font-family: 'Instrument Serif', serif;
+    font-size: clamp(52px, 8vw, 96px);
+    font-weight: 400;
+    line-height: 1;
     letter-spacing: -0.03em;
-    color: var(--navy);
-    margin-bottom: 24px;
+    color: var(--black);
+    margin-bottom: 28px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .hero h1 em {
     font-style: italic;
-    font-weight: 400;
-    color: var(--blue);
+    color: var(--accent);
   }
-  .hero p.lead {
-    font-size: 18px;
-    color: var(--gray);
-    margin-bottom: 36px;
-    max-width: 520px;
-    line-height: 1.6;
+  .hero p {
+    font-size: 19px;
+    color: var(--gray-600);
+    max-width: 560px;
+    margin: 0 auto 44px;
+    line-height: 1.7;
   }
   .hero-ctas {
     display: flex;
     gap: 14px;
+    justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 40px;
   }
-  .btn-primary {
-    background: var(--navy);
-    color: var(--cream);
-    padding: 18px 32px;
-    border-radius: 100px;
+  .btn {
+    padding: 16px 32px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 16px;
     display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    transition: all 0.2s;
-    border: none;
-    cursor: pointer;
-  }
-  .btn-primary:hover {
-    background: var(--blue);
-    transform: translateY(-2px);
-    box-shadow: 0 12px 28px rgba(30, 111, 217, 0.25);
-  }
-  .btn-secondary {
-    background: transparent;
-    color: var(--navy);
-    padding: 18px 32px;
-    border-radius: 100px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 16px;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    border: 1.5px solid var(--navy);
-    transition: all 0.2s;
-  }
-  .btn-secondary:hover {
-    background: var(--navy);
-    color: var(--cream);
-  }
-  .hero-trust {
-    display: flex;
-    gap: 32px;
-    align-items: center;
-    padding-top: 28px;
-    border-top: 1px solid rgba(10, 22, 40, 0.1);
-  }
-  .trust-item {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-  }
-  .trust-num {
-    font-family: 'Fraunces', serif;
-    font-size: 28px;
-    font-weight: 800;
-    color: var(--navy);
-    letter-spacing: -0.02em;
-  }
-  .trust-label {
-    font-size: 13px;
-    color: var(--gray);
-  }
-  .stars { color: var(--orange); font-size: 16px; }
-
-  /* HERO VISUAL with photo */
-  .hero-visual {
-    position: relative;
-    height: 600px;
-  }
-  .hero-photo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 60px;
-    bottom: 100px;
-    background: linear-gradient(135deg, var(--navy) 0%, #142844 50%, #1a3358 100%);
-    border-radius: 24px;
-    overflow: hidden;
-    box-shadow: 0 30px 80px rgba(10, 22, 40, 0.25);
-  }
-  .hero-photo::before {
-    content: '';
-    position: absolute;
-    top: -100px; right: -100px;
-    width: 500px; height: 500px;
-    background: radial-gradient(circle, rgba(59, 142, 255, 0.2) 0%, transparent 60%);
-    pointer-events: none;
-  }
-  .hero-photo::after {
-    content: '';
-    position: absolute;
-    bottom: -50px; left: -50px;
-    width: 400px; height: 400px;
-    background: radial-gradient(circle, rgba(255, 107, 53, 0.12) 0%, transparent 60%);
-    pointer-events: none;
-  }
-  .hero-photo-overlay {
-    position: absolute;
-    bottom: 32px;
-    left: 32px;
-    right: 32px;
-    color: white;
-    z-index: 2;
-  }
-  .hero-photo-overlay .label {
-    font-size: 12px;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    opacity: 0.7;
-    margin-bottom: 8px;
-  }
-  .hero-photo-overlay h3 {
-    font-family: 'Fraunces', serif;
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 1.1;
-    letter-spacing: -0.02em;
-    margin-bottom: 16px;
-  }
-  .hero-photo-big {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Fraunces', serif;
-    font-size: 140px;
-    font-weight: 800;
-    line-height: 0.85;
-    letter-spacing: -0.05em;
-    background: linear-gradient(180deg, var(--cream) 0%, rgba(245, 241, 232, 0.4) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    z-index: 1;
-    pointer-events: none;
-  }
-  .hero-card-rating {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background: var(--orange);
-    color: var(--navy);
-    padding: 28px;
-    border-radius: 20px;
-    width: 220px;
-    box-shadow: 0 20px 40px rgba(255, 107, 53, 0.3);
-    z-index: 3;
-  }
-  .rating-stars {
-    font-size: 22px;
-    margin-bottom: 8px;
-  }
-  .rating-num {
-    font-family: 'Fraunces', serif;
-    font-size: 40px;
-    font-weight: 800;
-    line-height: 1;
-  }
-  .rating-text {
-    font-size: 13px;
-    opacity: 0.8;
-    margin-top: 4px;
-  }
-  .hero-badge {
-    position: absolute;
-    top: 24px;
-    left: 24px;
-    background: rgba(245, 241, 232, 0.95);
-    backdrop-filter: blur(10px);
-    color: var(--navy);
-    padding: 10px 18px;
-    border-radius: 100px;
-    font-size: 13px;
-    font-weight: 600;
-    display: flex;
     align-items: center;
     gap: 8px;
-    z-index: 2;
+    transition: all 0.2s;
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+  }
+  .btn-dark {
+    background: var(--black);
+    color: var(--white);
+  }
+  .btn-dark:hover { opacity: 0.85; transform: translateY(-1px); }
+  .btn-outline {
+    background: transparent;
+    color: var(--black);
+    border: 1.5px solid var(--gray-200);
+  }
+  .btn-outline:hover { border-color: var(--black); }
+  .hero-stats {
+    display: flex;
+    gap: 48px;
+    justify-content: center;
+    margin-top: 80px;
+    padding-top: 48px;
+    border-top: 1px solid var(--gray-200);
+  }
+  .hero-stat {
+    text-align: center;
+  }
+  .hero-stat-num {
+    font-family: 'Instrument Serif', serif;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    color: var(--black);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .hero-stat-label {
+    font-size: 13px;
+    color: var(--gray-400);
+    font-weight: 500;
   }
 
-  /* SERVICES SECTION */
-  .services-section {
-    background: var(--navy);
-    color: var(--cream);
+  /* HOW IT WORKS */
+  .process {
     padding: 120px 24px;
-    position: relative;
-    overflow: hidden;
+    background: var(--black);
+    color: var(--white);
   }
   .section-inner {
-    max-width: 1280px;
+    max-width: 1200px;
     margin: 0 auto;
   }
-  .section-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    margin-bottom: 80px;
-    align-items: end;
-  }
-  .section-eyebrow {
-    color: var(--blue-bright);
-    font-size: 13px;
-    letter-spacing: 0.15em;
+  .section-label {
+    font-size: 12px;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
+  .process .section-label { color: var(--accent-light); }
   .section-title {
-    font-family: 'Fraunces', serif;
-    font-size: clamp(40px, 5vw, 64px);
-    font-weight: 800;
-    line-height: 1;
-    letter-spacing: -0.03em;
+    font-family: 'Instrument Serif', serif;
+    font-size: clamp(36px, 5vw, 56px);
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 64px;
   }
   .section-title em {
     font-style: italic;
-    font-weight: 400;
-    color: var(--blue-bright);
+    color: var(--accent-light);
   }
-  .section-desc {
-    color: rgba(245, 241, 232, 0.7);
-    font-size: 17px;
+  .process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+  }
+  .process-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 40px 32px;
+    border-radius: 16px;
+    transition: background 0.3s;
+  }
+  .process-card:hover {
+    background: rgba(255,255,255,0.08);
+  }
+  .process-num {
+    font-family: 'Instrument Serif', serif;
+    font-size: 48px;
+    color: var(--accent-light);
+    line-height: 1;
+    margin-bottom: 20px;
+    opacity: 0.7;
+  }
+  .process-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: -0.01em;
+  }
+  .process-card p {
+    font-size: 14px;
+    color: rgba(255,255,255,0.6);
     line-height: 1.6;
   }
-  .services-grid {
+
+  /* PRICING */
+  .pricing {
+    padding: 120px 24px;
+    background: var(--gray-100);
+  }
+  .pricing .section-label { color: var(--accent); }
+  .pricing .section-title { color: var(--black); }
+  .pricing-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
-  }
-  .service-card {
-    background: rgba(245, 241, 232, 0.04);
-    border: 1px solid rgba(245, 241, 232, 0.1);
-    padding: 36px;
-    border-radius: 20px;
-    transition: all 0.3s;
-    cursor: pointer;
-  }
-  .service-card:hover {
-    background: rgba(59, 142, 255, 0.08);
-    border-color: var(--blue-bright);
-    transform: translateY(-4px);
-  }
-  .service-icon {
-    width: 52px; height: 52px;
-    background: var(--blue);
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 24px;
-    font-size: 24px;
-  }
-  .service-card h3 {
-    font-family: 'Fraunces', serif;
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 12px;
-    letter-spacing: -0.01em;
-  }
-  .service-card p {
-    color: rgba(245, 241, 232, 0.65);
-    font-size: 15px;
-    line-height: 1.5;
-  }
-
-  /* GALLERY SECTION */
-  .gallery {
-    padding: 120px 24px;
-    background: var(--cream);
-  }
-  .gallery-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: 280px 280px;
-    gap: 16px;
-    margin-top: 60px;
-  }
-  .gallery-item {
-    border-radius: 20px;
-    overflow: hidden;
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    transition: transform 0.4s;
-    cursor: pointer;
-  }
-  .gallery-item:hover { transform: scale(1.02); }
-  .gallery-item::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(180deg, transparent 50%, rgba(10, 22, 40, 0.7) 100%);
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-  .gallery-item:hover::after { opacity: 1; }
-  .gallery-item .caption {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    color: white;
-    font-weight: 600;
-    opacity: 0;
-    transition: opacity 0.3s;
-    z-index: 2;
-  }
-  .gallery-item:hover .caption { opacity: 1; }
-  .gallery-1 {
-    grid-row: 1 / 3;
-    background: linear-gradient(135deg, var(--navy) 0%, #1a3358 100%);
-    color: var(--cream);
-    font-family: 'Fraunces', serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 40px;
-  }
-  .gallery-2 {
-    background: linear-gradient(135deg, var(--cream-warm) 0%, #d4c8a8 100%);
-    color: var(--navy);
-    font-family: 'Fraunces', serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 24px;
-  }
-  .gallery-3 {
-    background: linear-gradient(135deg, var(--blue) 0%, var(--blue-bright) 100%);
-    color: var(--cream);
-    font-family: 'Fraunces', serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 24px;
-  }
-  .gallery-4 {
-    background: linear-gradient(135deg, #2a4868 0%, var(--blue) 100%);
-    color: var(--cream);
-    font-family: 'Fraunces', serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 24px;
-  }
-  .gallery-5 {
-    background: linear-gradient(135deg, var(--orange) 0%, #ff8a5b 100%);
-    color: var(--navy);
-    font-family: 'Fraunces', serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 24px;
-  }
-  .gallery-placeholder-icon {
-    font-size: 56px;
-    display: block;
-    margin-bottom: 12px;
-  }
-  .gallery-1 .gallery-placeholder-icon { font-size: 80px; }
-  .gallery-placeholder-text {
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 1.3;
-  }
-  .gallery-1 .gallery-placeholder-text {
-    font-size: 26px;
-  }
-  .gallery-placeholder-sub {
-    font-size: 13px;
-    font-weight: 400;
-    opacity: 0.7;
-    margin-top: 8px;
-    font-family: 'Inter Tight', sans-serif;
-    font-style: italic;
-  }
-  .gallery-note {
-    text-align: center;
-    color: var(--gray);
-    margin-top: 32px;
-    font-size: 14px;
-    font-style: italic;
-  }
-
-  /* EMERGENCY BANNER with photo */
-  .emergency {
-    background: var(--orange);
-    color: var(--navy);
-    padding: 0;
-    overflow: hidden;
-    position: relative;
-  }
-  .emergency-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: stretch;
-    max-width: 1280px;
+    max-width: 1000px;
     margin: 0 auto;
   }
-  .emergency-content {
-    padding: 80px 60px;
+  .pricing-card {
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: 20px;
+    padding: 40px 32px;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
   }
-  .emergency-image {
-    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-deep) 100%);
-    min-height: 400px;
+  .pricing-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+  }
+  .pricing-card.featured {
+    background: var(--black);
+    color: var(--white);
+    border-color: var(--black);
+    transform: scale(1.04);
+  }
+  .pricing-card.featured:hover {
+    transform: scale(1.04) translateY(-4px);
+  }
+  .pricing-popular {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--accent);
+    color: white;
+    padding: 4px 16px;
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .pricing-name {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .pricing-desc {
+    font-size: 14px;
+    color: var(--gray-400);
+    margin-bottom: 24px;
+  }
+  .featured .pricing-desc { color: rgba(255,255,255,0.5); }
+  .pricing-price {
+    font-family: 'Instrument Serif', serif;
+    font-size: 52px;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  .pricing-unit {
+    font-size: 13px;
+    color: var(--gray-400);
+    margin-bottom: 32px;
+  }
+  .featured .pricing-unit { color: rgba(255,255,255,0.5); }
+  .pricing-features {
+    list-style: none;
+    margin-bottom: 32px;
+  }
+  .pricing-features li {
+    padding: 8px 0;
+    font-size: 14px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: var(--gray-600);
+  }
+  .featured .pricing-features li { color: rgba(255,255,255,0.75); }
+  .pricing-features li::before {
+    content: '✓';
+    color: var(--green);
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+  .pricing-btn {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    transition: all 0.2s;
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+  }
+  .pricing-card .pricing-btn {
+    background: var(--gray-100);
+    color: var(--black);
+  }
+  .pricing-card .pricing-btn:hover {
+    background: var(--gray-200);
+  }
+  .featured .pricing-btn {
+    background: var(--accent);
+    color: white;
+  }
+  .featured .pricing-btn:hover {
+    background: var(--accent-light);
+  }
+
+  /* WORK / DEMO */
+  .work {
+    padding: 120px 24px;
+  }
+  .work .section-label { color: var(--accent); }
+  .work-showcase {
+    margin-top: 48px;
+    background: var(--black);
+    border-radius: 24px;
+    padding: 48px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+  }
+  .work-info h3 {
+    font-family: 'Instrument Serif', serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+  }
+  .work-info p {
+    color: rgba(255,255,255,0.6);
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 24px;
+  }
+  .work-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+  }
+  .work-tag {
+    background: rgba(255,255,255,0.1);
+    color: rgba(255,255,255,0.7);
+    padding: 6px 14px;
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .work-link {
+    color: var(--accent-light);
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .work-link:hover { text-decoration: underline; }
+  .work-preview {
+    background: linear-gradient(135deg, #1a3358 0%, #0a1628 100%);
+    border-radius: 16px;
+    aspect-ratio: 4/3;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--cream);
+    flex-direction: column;
+    color: var(--white);
     position: relative;
     overflow: hidden;
   }
-  .emergency-image::before {
+  .work-preview::before {
     content: '';
     position: absolute;
-    top: 50%; left: 50%;
+    top: -50%; right: -30%;
     width: 400px; height: 400px;
-    background: radial-gradient(circle, rgba(255, 107, 53, 0.25) 0%, transparent 60%);
-    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, rgba(37, 99, 235, 0.2) 0%, transparent 60%);
   }
-  .emergency-image-content {
+  .work-preview-big {
+    font-family: 'Instrument Serif', serif;
+    font-size: 80px;
+    font-weight: 400;
+    opacity: 0.3;
+    letter-spacing: -0.05em;
+    line-height: 1;
     position: relative;
     z-index: 2;
-    text-align: center;
   }
-  .emergency-image-big {
-    font-family: 'Fraunces', serif;
-    font-size: 100px;
-    font-weight: 800;
-    line-height: 1;
-    color: var(--orange);
-    margin-bottom: 12px;
-    letter-spacing: -0.03em;
-  }
-  .emergency-image-label {
+  .work-preview-label {
     font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
-    letter-spacing: 0.2em;
-    opacity: 0.8;
+    opacity: 0.5;
+    margin-top: 12px;
+    position: relative;
+    z-index: 2;
   }
-  .emergency h2 {
-    font-family: 'Fraunces', serif;
-    font-size: clamp(36px, 4vw, 56px);
-    font-weight: 800;
+
+  /* CTA SECTION */
+  .cta-section {
+    padding: 120px 24px;
+    background: var(--accent);
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+  .cta-section::before {
+    content: '';
+    position: absolute;
+    top: -200px; left: 50%;
+    width: 800px; height: 800px;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 50%);
+    transform: translateX(-50%);
+  }
+  .cta-section h2 {
+    font-family: 'Instrument Serif', serif;
+    font-size: clamp(40px, 6vw, 72px);
+    font-weight: 400;
     line-height: 1;
     letter-spacing: -0.03em;
     margin-bottom: 20px;
+    position: relative;
   }
-  .emergency p {
+  .cta-section p {
     font-size: 18px;
-    margin-bottom: 32px;
+    opacity: 0.85;
+    margin-bottom: 36px;
     max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
   }
-  .emergency-cta {
-    background: var(--navy);
-    color: var(--cream);
-    padding: 22px 40px;
-    border-radius: 100px;
-    text-decoration: none;
+  .btn-white {
+    background: white;
+    color: var(--accent);
+    padding: 18px 36px;
+    border-radius: 10px;
+    font-size: 16px;
     font-weight: 700;
-    font-size: 20px;
+    text-decoration: none;
     display: inline-flex;
     align-items: center;
-    gap: 12px;
+    gap: 8px;
     transition: transform 0.2s;
-  }
-  .emergency-cta:hover { transform: scale(1.04); }
-
-  /* ABOUT / WHY US WITH PHOTO */
-  .why {
-    padding: 120px 24px;
-    max-width: 1280px;
-    margin: 0 auto;
-  }
-  .why-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    align-items: center;
-  }
-  .why-content h2 {
-    font-family: 'Fraunces', serif;
-    font-size: clamp(40px, 5vw, 60px);
-    font-weight: 800;
-    line-height: 1;
-    letter-spacing: -0.03em;
-    margin-bottom: 32px;
-  }
-  .why-content h2 em {
-    font-style: italic;
-    font-weight: 400;
-    color: var(--blue);
-  }
-  .why-list {
-    list-style: none;
-  }
-  .why-list li {
-    padding: 24px 0;
-    border-top: 1px solid rgba(10, 22, 40, 0.1);
-    display: grid;
-    grid-template-columns: 40px 1fr;
-    gap: 20px;
-    align-items: start;
-  }
-  .why-list li:last-child { border-bottom: 1px solid rgba(10, 22, 40, 0.1); }
-  .why-num {
-    font-family: 'Fraunces', serif;
-    font-size: 24px;
-    font-weight: 800;
-    color: var(--blue);
-  }
-  .why-text h4 {
-    font-size: 19px;
-    font-weight: 600;
-    margin-bottom: 6px;
-    color: var(--navy);
-  }
-  .why-text p {
-    color: var(--gray);
-    font-size: 15px;
-  }
-  .why-visual {
-    position: relative;
-    aspect-ratio: 4/5;
-  }
-  .why-photo {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, var(--cream-warm) 0%, #d4c8a8 100%);
-    border-radius: 28px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 48px;
-    position: relative;
-    overflow: hidden;
-  }
-  .why-photo::before {
-    content: '';
-    position: absolute;
-    top: -100px; right: -100px;
-    width: 400px; height: 400px;
-    background: radial-gradient(circle, rgba(30, 111, 217, 0.15) 0%, transparent 60%);
-  }
-  .why-photo-icon {
-    font-size: 96px;
-    margin-bottom: 24px;
-    z-index: 2;
     position: relative;
   }
-  .why-photo-quote {
-    font-family: 'Fraunces', serif;
-    font-size: 24px;
-    line-height: 1.3;
-    font-weight: 400;
-    font-style: italic;
-    color: var(--navy);
-    text-align: center;
-    max-width: 320px;
-    z-index: 2;
-    position: relative;
-  }
-  .why-overlay-card {
-    position: absolute;
-    bottom: -30px;
-    left: -30px;
-    background: var(--navy);
-    color: var(--cream);
-    padding: 28px 32px;
-    border-radius: 20px;
-    max-width: 280px;
-    box-shadow: 0 20px 50px rgba(10, 22, 40, 0.3);
-  }
-  .why-overlay-card .big {
-    font-family: 'Fraunces', serif;
-    font-size: 48px;
-    font-weight: 800;
-    line-height: 1;
-    color: var(--orange);
-    margin-bottom: 8px;
-  }
-  .why-overlay-card .small {
-    font-size: 14px;
-    opacity: 0.8;
-  }
-
-  /* REVIEWS */
-  .reviews {
-    background: var(--cream-warm);
-    padding: 120px 24px;
-  }
-  .reviews-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    margin-top: 60px;
-  }
-  .review {
-    background: var(--cream);
-    padding: 36px;
-    border-radius: 20px;
-    border: 1px solid rgba(10, 22, 40, 0.06);
-  }
-  .review-stars {
-    color: var(--orange);
-    margin-bottom: 16px;
-    font-size: 16px;
-  }
-  .review p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 24px;
-    color: var(--navy);
-  }
-  .review-author {
-    font-size: 14px;
-    color: var(--gray);
-    border-top: 1px solid rgba(10, 22, 40, 0.08);
-    padding-top: 16px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
-  .review-avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: var(--blue);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    font-size: 15px;
-  }
-  .review-author strong { color: var(--navy); font-weight: 600; display: block; }
-
-  /* SERVICE AREA */
-  .area {
-    padding: 120px 24px;
-    background: var(--navy);
-    color: var(--cream);
-  }
-  .area-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
-    max-width: 1280px;
-    margin: 0 auto;
-  }
-  .area-content h2 {
-    font-family: 'Fraunces', serif;
-    font-size: clamp(40px, 5vw, 60px);
-    font-weight: 800;
-    line-height: 1;
-    letter-spacing: -0.03em;
-    margin-bottom: 24px;
-  }
-  .area-content h2 em { font-style: italic; font-weight: 400; color: var(--blue-bright); }
-  .area-content > p {
-    color: rgba(245, 241, 232, 0.7);
-    font-size: 17px;
-    line-height: 1.6;
-    margin-bottom: 32px;
-    max-width: 480px;
-  }
-  .area-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    list-style: none;
-  }
-  .area-list li {
-    padding: 14px 18px;
-    background: rgba(245, 241, 232, 0.06);
-    border-radius: 10px;
-    font-size: 15px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  .area-list li::before {
-    content: '📍';
-    font-size: 14px;
-  }
-  .area-map {
-    aspect-ratio: 1;
-    background: linear-gradient(135deg, rgba(30, 111, 217, 0.15) 0%, rgba(59, 142, 255, 0.05) 100%);
-    border: 1px solid rgba(59, 142, 255, 0.2);
-    border-radius: 28px;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .area-map svg { width: 100%; height: 100%; }
+  .btn-white:hover { transform: translateY(-2px); }
 
   /* CONTACT */
   .contact {
     padding: 120px 24px;
-    max-width: 1280px;
+    max-width: 800px;
     margin: 0 auto;
   }
-  .contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-  }
-  .contact-info h2 {
-    font-family: 'Fraunces', serif;
-    font-size: clamp(40px, 5vw, 60px);
-    font-weight: 800;
-    line-height: 1;
-    letter-spacing: -0.03em;
-    margin-bottom: 24px;
-  }
-  .contact-info > p {
-    color: var(--gray);
-    font-size: 17px;
-    margin-bottom: 40px;
-    max-width: 480px;
-  }
-  .contact-items {
-    list-style: none;
-  }
-  .contact-items li {
-    padding: 20px 0;
-    border-top: 1px solid rgba(10, 22, 40, 0.1);
-    display: flex;
-    gap: 16px;
-    align-items: center;
-  }
-  .contact-icon {
-    width: 44px; height: 44px;
-    background: var(--navy);
-    color: var(--cream);
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    font-size: 18px;
-  }
-  .contact-text small {
-    color: var(--gray);
-    font-size: 13px;
-    display: block;
-    margin-bottom: 2px;
-  }
-  .contact-text strong {
-    color: var(--navy);
-    font-size: 17px;
-    font-weight: 600;
-  }
+  .contact .section-label { color: var(--accent); }
   .contact-form {
-    background: var(--navy);
-    padding: 48px;
-    border-radius: 24px;
-    color: var(--cream);
-  }
-  .contact-form h3 {
-    font-family: 'Fraunces', serif;
-    font-size: 28px;
-    font-weight: 600;
-    margin-bottom: 8px;
-  }
-  .contact-form > p {
-    color: rgba(245, 241, 232, 0.65);
-    font-size: 14px;
-    margin-bottom: 28px;
-  }
-  .form-row {
+    margin-top: 48px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 14px;
-    margin-bottom: 14px;
+    gap: 16px;
   }
-  .form-group { margin-bottom: 14px; }
-  .form-group label {
+  .contact-form .full { grid-column: 1 / -1; }
+  .contact-form label {
     display: block;
     font-size: 13px;
-    margin-bottom: 8px;
-    color: rgba(245, 241, 232, 0.7);
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: var(--gray-600);
   }
-  .form-group input,
-  .form-group select,
-  .form-group textarea {
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
     width: 100%;
-    background: rgba(245, 241, 232, 0.06);
-    border: 1px solid rgba(245, 241, 232, 0.15);
-    color: var(--cream);
     padding: 14px 16px;
+    border: 1.5px solid var(--gray-200);
     border-radius: 10px;
     font-family: inherit;
     font-size: 15px;
     transition: border-color 0.2s;
+    background: var(--white);
+    color: var(--black);
   }
-  .form-group input:focus,
-  .form-group select:focus,
-  .form-group textarea:focus {
+  .contact-form input:focus,
+  .contact-form select:focus,
+  .contact-form textarea:focus {
     outline: none;
-    border-color: var(--blue-bright);
+    border-color: var(--accent);
   }
-  .form-group textarea { resize: vertical; min-height: 100px; }
-  .form-submit {
+  .contact-form textarea { resize: vertical; min-height: 120px; }
+  .contact-submit {
     width: 100%;
-    background: var(--orange);
-    color: var(--navy);
+    padding: 16px;
+    background: var(--black);
+    color: var(--white);
     border: none;
-    padding: 18px;
-    border-radius: 100px;
-    font-weight: 700;
-    font-size: 16px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
     cursor: pointer;
-    margin-top: 8px;
-    transition: transform 0.2s;
     font-family: inherit;
+    transition: opacity 0.2s;
   }
-  .form-submit:hover { transform: translateY(-2px); }
+  .contact-submit:hover { opacity: 0.85; }
 
   /* FOOTER */
   footer {
-    background: var(--navy-deep);
-    color: var(--cream);
-    padding: 60px 24px 30px;
+    background: var(--black);
+    color: var(--white);
+    padding: 48px 24px;
+    text-align: center;
   }
-  .footer-inner {
-    max-width: 1280px;
-    margin: 0 auto;
-  }
-  .footer-top {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    gap: 40px;
-    padding-bottom: 40px;
-    border-bottom: 1px solid rgba(245, 241, 232, 0.1);
-  }
-  .footer-brand .logo { color: var(--cream); margin-bottom: 16px; }
-  .footer-brand p {
-    color: rgba(245, 241, 232, 0.5);
-    font-size: 14px;
-    max-width: 320px;
-  }
-  .footer-col h5 {
+  footer .logo { color: var(--white); margin-bottom: 16px; display: inline-block; }
+  footer p {
     font-size: 13px;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    margin-bottom: 16px;
-    color: rgba(245, 241, 232, 0.5);
-  }
-  .footer-col ul { list-style: none; }
-  .footer-col li { margin-bottom: 10px; }
-  .footer-col a {
-    color: var(--cream);
-    text-decoration: none;
-    font-size: 14px;
-    opacity: 0.8;
-    transition: opacity 0.2s;
-  }
-  .footer-col a:hover { opacity: 1; color: var(--blue-bright); }
-  .footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 30px;
-    font-size: 13px;
-    color: rgba(245, 241, 232, 0.4);
-    flex-wrap: wrap;
-    gap: 12px;
+    color: rgba(255,255,255,0.4);
   }
 
   /* RESPONSIVE */
   @media (max-width: 900px) {
-    .hero {
-      grid-template-columns: 1fr;
-      padding: 60px 24px 80px;
-      gap: 40px;
-    }
-    .hero-visual { height: 500px; }
-    .nav-links { display: none; }
-    .mobile-toggle { display: block; background: none; border: none; cursor: pointer; font-size: 24px; }
-    .services-grid { grid-template-columns: 1fr; }
-    .section-header { grid-template-columns: 1fr; gap: 24px; }
-    .why-grid { grid-template-columns: 1fr; gap: 60px; }
-    .reviews-grid { grid-template-columns: 1fr; }
-    .contact-grid { grid-template-columns: 1fr; gap: 40px; }
-    .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; }
-    .hero-trust { flex-wrap: wrap; gap: 24px; }
-    .emergency-grid { grid-template-columns: 1fr; }
-    .emergency-image { min-height: 250px; order: -1; }
-    .emergency-content { padding: 60px 24px; }
-    .area-grid { grid-template-columns: 1fr; }
-    .gallery-grid {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 240px 240px 240px;
-    }
-    .gallery-1 { grid-row: 1 / 2; grid-column: 1 / 3; }
-    .why-overlay-card { left: 20px; bottom: -20px; padding: 20px; }
+    .process-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+    .pricing-grid { grid-template-columns: 1fr; max-width: 400px; }
+    .pricing-card.featured { transform: none; }
+    .pricing-card.featured:hover { transform: translateY(-4px); }
+    .work-showcase { grid-template-columns: 1fr; }
+    .hero-stats { gap: 32px; }
+    .nav-right a:not(.nav-cta) { display: none; }
+    .contact-form { grid-template-columns: 1fr; }
   }
   @media (max-width: 600px) {
-    .footer-top { grid-template-columns: 1fr; }
-    .form-row { grid-template-columns: 1fr; }
-    .hero-card-rating { width: 160px; padding: 20px; }
-    .rating-num { font-size: 32px; }
-    .area-list { grid-template-columns: 1fr; }
+    .process-grid { grid-template-columns: 1fr; }
+    .hero-stats { flex-direction: column; gap: 24px; }
   }
 </style>
 </head>
 <body>
 
-<div class="topbar">
-  <div class="topbar-inner">
-    <div class="topbar-left">
-      <span><span class="pulse"></span> 24/7 Bereikbaar</span>
-      <span>📍 Purmerend &amp; omgeving</span>
-    </div>
-    <span>Spoedlijn: <strong>06-40077726</strong></span>
-  </div>
-</div>
-
 <nav>
   <div class="nav-inner">
-    <a href="#" class="logo">
-      <span class="logo-mark">M</span>
-      MDB Loodgieters
-    </a>
-    <div class="nav-links">
-      <a href="#diensten">Diensten</a>
-      <a href="#werk">Ons werk</a>
-      <a href="#waarom">Waarom MDB</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#contact">Contact</a>
-      <a href="tel:0640077726" class="nav-cta">📞 Bel direct</a>
+    <a href="#" class="logo">ZIMR <span>Studio</span></a>
+    <div class="nav-right">
+      <a href="#werkwijze">Werkwijze</a>
+      <a href="#prijzen">Prijzen</a>
+      <a href="#werk">Portfolio</a>
+      <a href="#contact" class="nav-cta">Contact</a>
     </div>
-    <button class="mobile-toggle">☰</button>
   </div>
 </nav>
 
 <section class="hero">
-  <div class="hero-content">
-    <div class="hero-eyebrow">
-      <span class="pulse"></span> Nu beschikbaar voor spoedklussen
-    </div>
-    <h1>Lekkage of verstopping? <em>Wij staan voor u klaar.</em></h1>
-    <p class="lead">MDB Loodgieters is dag en nacht bereikbaar in Purmerend en omstreken. Snelle service, eerlijke prijzen en werk dat we garanderen. Met 51 vijf-sterren reviews als bewijs.</p>
-    <div class="hero-ctas">
-      <a href="tel:0640077726" class="btn-primary">📞 Bel 06-40077726</a>
-      <a href="#contact" class="btn-secondary">Offerte aanvragen</a>
-    </div>
-    <div class="hero-trust">
-      <div class="trust-item">
-        <span class="trust-num">5.0 <span class="stars">★</span></span>
-        <span class="trust-label">51 Google reviews</span>
-      </div>
-      <div class="trust-item">
-        <span class="trust-num">24/7</span>
-        <span class="trust-label">Bereikbaar</span>
-      </div>
-      <div class="trust-item">
-        <span class="trust-num">&lt;1u</span>
-        <span class="trust-label">Reactietijd spoed</span>
-      </div>
-    </div>
+  <div class="hero-badge">
+    <span class="hero-badge-dot"></span>
+    Beschikbaar voor nieuwe projecten
   </div>
-
-  <div class="hero-visual">
-    <div class="hero-photo">
-      <div class="hero-badge">
-        <span class="pulse"></span> Live beschikbaar
-      </div>
-      <div class="hero-photo-big">24/7</div>
-      <div class="hero-photo-overlay">
-        <div class="label">Vakwerk in Purmerend</div>
-        <h3>Snel ter plaatse,<br>netjes opgelost.</h3>
-      </div>
+  <h1>Websites voor <em>vakmensen.</em> Live binnen 7 dagen.</h1>
+  <p>U focust op uw vak, wij regelen uw online aanwezigheid. Professionele websites voor loodgieters, schilders, hoveniers en andere vakmensen in Nederland.</p>
+  <div class="hero-ctas">
+    <a href="#prijzen" class="btn btn-dark">Bekijk pakketten</a>
+    <a href="#werk" class="btn btn-outline">Bekijk ons werk</a>
+  </div>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <div class="hero-stat-num">7</div>
+      <div class="hero-stat-label">Dagen tot live</div>
     </div>
-    <div class="hero-card-rating">
-      <div class="rating-stars">★★★★★</div>
-      <div class="rating-num">5.0</div>
-      <div class="rating-text">51 Google reviews</div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">€795</div>
+      <div class="hero-stat-label">Vanaf prijs</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">€0</div>
+      <div class="hero-stat-label">Maandelijkse kosten</div>
     </div>
   </div>
 </section>
 
-<section class="services-section" id="diensten">
+<section class="process" id="werkwijze">
   <div class="section-inner">
-    <div class="section-header">
-      <div>
-        <div class="section-eyebrow">Onze diensten</div>
-        <h2 class="section-title">Alles op het gebied van <em>sanitair &amp; loodgieterswerk</em></h2>
+    <div class="section-label">Werkwijze</div>
+    <h2 class="section-title">Van eerste contact tot <em>live in 7 dagen</em></h2>
+    <div class="process-grid">
+      <div class="process-card">
+        <div class="process-num">01</div>
+        <h3>Kennismaking</h3>
+        <p>U vertelt over uw bedrijf, diensten en wensen. Wij luisteren en denken mee. Vrijblijvend en zonder verplichtingen.</p>
       </div>
-      <p class="section-desc">Van een lekkende kraan tot een complete verbouwing van uw badkamer. MDB Loodgieters lost het op. Vakwerk met garantie, eerlijke prijzen vooraf, en altijd duidelijke communicatie.</p>
-    </div>
-
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="service-icon">🔥</div>
-        <h3>CV-ketel vervanging</h3>
-        <p>Vakkundige plaatsing en vervanging van CV-ketels. Inclusief afvoer oude ketel en complete aansluiting voor optimaal rendement.</p>
+      <div class="process-card">
+        <div class="process-num">02</div>
+        <h3>Ontwerp</h3>
+        <p>Binnen 3 dagen ontvangt u een compleet ontwerp. Inclusief teksten, kleuren en structuur. Afgestemd op uw branche.</p>
       </div>
-      <div class="service-card">
-        <div class="service-icon">💧</div>
-        <h3>Lekkage detectie</h3>
-        <p>Snelle en nauwkeurige opsporing van sanitaire lekkages, ook achter wanden en onder vloeren. Geen onnodig hak- en breekwerk.</p>
+      <div class="process-card">
+        <div class="process-num">03</div>
+        <h3>Feedback</h3>
+        <p>U geeft feedback, wij passen aan. Foto's van uw bus, klussen of bedrijf voegen we toe. Twee revisierondes inbegrepen.</p>
       </div>
-      <div class="service-card">
-        <div class="service-icon">🚿</div>
-        <h3>Ontstoppingen</h3>
-        <p>Verstopte gootsteen, douche of toilet? Wij ontstoppen elke afvoer professioneel met de juiste apparatuur en aanpak.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">🚰</div>
-        <h3>Buitenkranen</h3>
-        <p>Plaatsen, repareren en vorstvrij maken van buitenkranen. Ideaal voor tuin en garage, met goede aansluiting op uw waterleiding.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">🔧</div>
-        <h3>Gas &amp; water</h3>
-        <p>Installatie en onderhoud van gas- en waterleidingen. Volgens alle Nederlandse normen, veilig en met de juiste keuringen.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">🛁</div>
-        <h3>Sanitair</h3>
-        <p>Complete sanitaire installaties: toiletten, wastafels, douches en badkamers. Van losse vervanging tot volledige verbouwing.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">⚙️</div>
-        <h3>Lood &amp; zink werk</h3>
-        <p>Vakwerk in lood- en zinkbewerking voor goten, kilgoten en daklood. Met jarenlange ervaring in traditioneel vakmanschap.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">🏠</div>
-        <h3>Dakbedekking</h3>
-        <p>Reparatie en vervanging van dakbedekking. Voor zowel platte als hellende daken, met garantie op materiaal en uitvoering.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">⚡</div>
-        <h3>Spoedservice 24/7</h3>
-        <p>Acute lekkage in het weekend of midden in de nacht? Bel ons direct. Wij staan dag en nacht klaar voor noodgevallen.</p>
+      <div class="process-card">
+        <div class="process-num">04</div>
+        <h3>Live</h3>
+        <p>Binnen 7 dagen staat uw website live op uw eigen domeinnaam. Vindbaar op Google, perfect op mobiel.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="gallery" id="werk">
+<section class="pricing" id="prijzen">
+  <div class="section-inner" style="text-align: center;">
+    <div class="section-label">Pakketten</div>
+    <h2 class="section-title">Eerlijke prijzen, <em>geen abonnementen</em></h2>
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <div class="pricing-name">Starter</div>
+        <div class="pricing-desc">Voor ZZP'ers die snel online willen</div>
+        <div class="pricing-price">€795</div>
+        <div class="pricing-unit">eenmalig</div>
+        <ul class="pricing-features">
+          <li>5 pagina's</li>
+          <li>Mobiel vriendelijk</li>
+          <li>Contact formulier</li>
+          <li>Google vindbaar (basis SEO)</li>
+          <li>Eigen domeinnaam geregeld</li>
+          <li>Live binnen 7 dagen</li>
+          <li>2 revisierondes</li>
+        </ul>
+        <a href="#contact" class="pricing-btn">Neem contact op</a>
+      </div>
+      <div class="pricing-card featured">
+        <div class="pricing-popular">Populair</div>
+        <div class="pricing-name">Professioneel</div>
+        <div class="pricing-desc">Complete website met alles erop en eraan</div>
+        <div class="pricing-price">€1.295</div>
+        <div class="pricing-unit">eenmalig</div>
+        <ul class="pricing-features">
+          <li>Alles uit Starter</li>
+          <li>Tot 10 pagina's</li>
+          <li>Google Reviews integratie</li>
+          <li>WhatsApp chat knop</li>
+          <li>Foto galerij van uw werk</li>
+          <li>Werkgebied kaart</li>
+          <li>3 revisierondes</li>
+        </ul>
+        <a href="#contact" class="pricing-btn">Neem contact op</a>
+      </div>
+      <div class="pricing-card">
+        <div class="pricing-name">Premium</div>
+        <div class="pricing-desc">Voor bedrijven die willen groeien</div>
+        <div class="pricing-price">€1.995</div>
+        <div class="pricing-unit">eenmalig</div>
+        <ul class="pricing-features">
+          <li>Alles uit Professioneel</li>
+          <li>Onbeperkt pagina's</li>
+          <li>Offerte aanvraag systeem</li>
+          <li>Google Bedrijfsprofiel setup</li>
+          <li>Basis SEO optimalisatie</li>
+          <li>1 maand gratis nazorg</li>
+          <li>Onbeperkt revisies</li>
+        </ul>
+        <a href="#contact" class="pricing-btn">Neem contact op</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="work" id="werk">
   <div class="section-inner">
-    <div class="section-header">
-      <div>
-        <div class="section-eyebrow" style="color: var(--blue);">Ons werk</div>
-        <h2 class="section-title" style="color: var(--navy);">Een kijkje in <em style="color: var(--blue);">de praktijk</em></h2>
-      </div>
-      <p class="section-desc" style="color: var(--gray);">Een greep uit recente klussen. Van spoedreparaties tot complete sanitaire installaties bij particulieren en bedrijven in Purmerend en omgeving.</p>
-    </div>
-
-    <div class="gallery-grid">
-      <div class="gallery-item gallery-1">
-        <div>
-          <span class="gallery-placeholder-icon">🛁</span>
-          <div class="gallery-placeholder-text">Badkamer installatie</div>
-          <div class="gallery-placeholder-sub">Uw foto komt hier</div>
+    <div class="section-label">Portfolio</div>
+    <h2 class="section-title">Recent <em>werk</em></h2>
+    <div class="work-showcase">
+      <div class="work-info">
+        <h3>MDB Loodgieters</h3>
+        <p>Complete website voor een loodgietersbedrijf in Purmerend. 24/7 spoedservice, 9 diensten, offerte formulier en werkgebied kaart. Ontworpen om direct telefoontjes binnen te krijgen.</p>
+        <div class="work-tags">
+          <span class="work-tag">Loodgieter</span>
+          <span class="work-tag">Purmerend</span>
+          <span class="work-tag">24/7 service</span>
         </div>
+        <a href="/mdb/" class="work-link">Bekijk demo →</a>
       </div>
-      <div class="gallery-item gallery-2">
-        <div>
-          <span class="gallery-placeholder-icon">🚿</span>
-          <div class="gallery-placeholder-text">Sanitair werk</div>
-          <div class="gallery-placeholder-sub">Uw foto komt hier</div>
-        </div>
-      </div>
-      <div class="gallery-item gallery-3">
-        <div>
-          <span class="gallery-placeholder-icon">💧</span>
-          <div class="gallery-placeholder-text">Lekkage reparatie</div>
-          <div class="gallery-placeholder-sub">Uw foto komt hier</div>
-        </div>
-      </div>
-      <div class="gallery-item gallery-4">
-        <div>
-          <span class="gallery-placeholder-icon">🔧</span>
-          <div class="gallery-placeholder-text">Kraan installatie</div>
-          <div class="gallery-placeholder-sub">Uw foto komt hier</div>
-        </div>
-      </div>
-      <div class="gallery-item gallery-5">
-        <div>
-          <span class="gallery-placeholder-icon">🚐</span>
-          <div class="gallery-placeholder-text">MDB Service bus</div>
-          <div class="gallery-placeholder-sub">Uw foto komt hier</div>
-        </div>
-      </div>
-    </div>
-
-    <p class="gallery-note">📸 Stuur ons 5 foto's (bus, recente klussen, badkamer-installaties). Deze plaatsen wij hier zodat klanten echt zien wat u doet.</p>
-  </div>
-</section>
-
-<section class="emergency">
-  <div class="emergency-grid">
-    <div class="emergency-content">
-      <h2>Wateroverlast?<br>Bel direct.</h2>
-      <p>Bij een lekkage telt elke minuut. Wij zijn 24 uur per dag bereikbaar en meestal binnen het uur ter plaatse in Purmerend en omgeving.</p>
-      <a href="tel:0640077726" class="emergency-cta">📞 06-40077726</a>
-    </div>
-    <div class="emergency-image">
-      <div class="emergency-image-content">
-        <div class="emergency-image-big">24/7</div>
-        <div class="emergency-image-label">Altijd bereikbaar</div>
+      <div class="work-preview">
+        <div class="work-preview-big">MDB</div>
+        <div class="work-preview-label">Loodgieters Purmerend</div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="why" id="waarom">
-  <div class="why-grid">
-    <div class="why-content">
-      <h2>Waarom kiezen voor <em>MDB Loodgieters?</em></h2>
-      <ul class="why-list">
-        <li>
-          <span class="why-num">01</span>
-          <div class="why-text">
-            <h4>Eerlijke prijs vooraf</h4>
-            <p>Geen verrassingen achteraf. U weet vooraf wat het kost en wat we doen.</p>
-          </div>
-        </li>
-        <li>
-          <span class="why-num">02</span>
-          <div class="why-text">
-            <h4>Vakwerk met garantie</h4>
-            <p>Op al onze werkzaamheden krijgt u garantie. Mocht er iets misgaan, dan lossen wij het op.</p>
-          </div>
-        </li>
-        <li>
-          <span class="why-num">03</span>
-          <div class="why-text">
-            <h4>Snel ter plaatse</h4>
-            <p>Voor spoedklussen meestal binnen het uur bij u in Purmerend en omgeving.</p>
-          </div>
-        </li>
-        <li>
-          <span class="why-num">04</span>
-          <div class="why-text">
-            <h4>51 keer vijf sterren</h4>
-            <p>Onze klanten waarderen ons werk consistent met de hoogste score op Google.</p>
-          </div>
-        </li>
-      </ul>
-    </div>
-
-    <div class="why-visual">
-      <div class="why-photo">
-        <div class="why-photo-icon">🔧</div>
-        <div class="why-photo-quote">"Snel ter plaatse, netjes gewerkt en eerlijke prijs."</div>
-      </div>
-      <div class="why-overlay-card">
-        <div class="big">10+</div>
-        <div class="small">jaar ervaring in loodgieters- en sanitair werk in Noord-Holland</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="reviews" id="reviews">
-  <div class="section-inner">
-    <div class="section-header">
-      <div>
-        <div class="section-eyebrow" style="color: var(--blue);">Klantervaringen</div>
-        <h2 class="section-title" style="color: var(--navy);">Wat onze klanten <em style="color: var(--blue);">over ons zeggen</em></h2>
-      </div>
-      <p class="section-desc" style="color: var(--gray);">Een 5.0 score op Google met 51 reviews. Opgebouwd door consistent goed werk te leveren bij bewoners en bedrijven in heel Noord-Holland.</p>
-    </div>
-
-    <div class="reviews-grid">
-      <div class="review">
-        <div class="review-stars">★★★★★</div>
-        <p>"Lekkage in de keuken op zaterdagavond. Binnen 45 minuten was Mike er. Probleem snel opgelost en nette afronding. Top service!"</p>
-        <div class="review-author">
-          <div class="review-avatar">J</div>
-          <div><strong>Jeroen B.</strong>Purmerend</div>
-        </div>
-      </div>
-      <div class="review">
-        <div class="review-stars">★★★★★</div>
-        <p>"Hele professionele aanpak. Vooraf duidelijke prijsopgave en geen verrassingen achteraf. Nieuwe badkamer keurig aangesloten."</p>
-        <div class="review-author">
-          <div class="review-avatar">S</div>
-          <div><strong>Sandra K.</strong>Volendam</div>
-        </div>
-      </div>
-      <div class="review">
-        <div class="review-stars">★★★★★</div>
-        <p>"Verstopt toilet midden in de nacht. Direct gebeld en binnen het uur was hij er. Vriendelijk, snel en eerlijk geprijsd."</p>
-        <div class="review-author">
-          <div class="review-avatar">H</div>
-          <div><strong>Hans M.</strong>Edam</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="area">
-  <div class="area-grid">
-    <div class="area-content">
-      <div class="section-eyebrow">Werkgebied</div>
-      <h2>Actief in heel <em>Noord-Holland</em></h2>
-      <p>Vanuit ons centrale punt in Purmerend bedienen wij klanten in een straal van ongeveer 30 kilometer. Voor spoedgevallen komen we daarbuiten ook graag langs.</p>
-      <ul class="area-list">
-        <li>Purmerend</li>
-        <li>Volendam</li>
-        <li>Edam</li>
-        <li>Monnickendam</li>
-        <li>Zaandam</li>
-        <li>Wormerveer</li>
-        <li>Landsmeer</li>
-        <li>Amsterdam Noord</li>
-      </ul>
-    </div>
-    <div class="area-map">
-      <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <radialGradient id="mapGlow" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stop-color="#3b8eff" stop-opacity="0.4"/>
-            <stop offset="100%" stop-color="#3b8eff" stop-opacity="0"/>
-          </radialGradient>
-        </defs>
-        <circle cx="200" cy="200" r="150" fill="url(#mapGlow)"/>
-        <circle cx="200" cy="200" r="120" fill="none" stroke="#3b8eff" stroke-opacity="0.2" stroke-dasharray="4 4"/>
-        <circle cx="200" cy="200" r="80" fill="none" stroke="#3b8eff" stroke-opacity="0.3" stroke-dasharray="4 4"/>
-        <circle cx="200" cy="200" r="40" fill="none" stroke="#3b8eff" stroke-opacity="0.4"/>
-        <circle cx="200" cy="200" r="8" fill="#ff6b35"/>
-        <circle cx="200" cy="200" r="14" fill="none" stroke="#ff6b35" stroke-opacity="0.5"/>
-        <text x="200" y="230" text-anchor="middle" fill="#f5f1e8" font-family="Fraunces, serif" font-size="14" font-weight="600">Purmerend</text>
-        <circle cx="280" cy="170" r="4" fill="#3b8eff"/>
-        <text x="280" y="160" text-anchor="middle" fill="#f5f1e8" font-size="10" opacity="0.7">Volendam</text>
-        <circle cx="290" cy="200" r="4" fill="#3b8eff"/>
-        <text x="290" y="218" text-anchor="middle" fill="#f5f1e8" font-size="10" opacity="0.7">Edam</text>
-        <circle cx="150" cy="270" r="4" fill="#3b8eff"/>
-        <text x="150" y="290" text-anchor="middle" fill="#f5f1e8" font-size="10" opacity="0.7">Amsterdam</text>
-        <circle cx="120" cy="200" r="4" fill="#3b8eff"/>
-        <text x="120" y="190" text-anchor="middle" fill="#f5f1e8" font-size="10" opacity="0.7">Zaandam</text>
-      </svg>
-    </div>
-  </div>
+<section class="cta-section">
+  <h2>Klaar om online te gaan?</h2>
+  <p>Vertel ons over uw bedrijf. Wij sturen binnen 24 uur een vrijblijvend voorstel.</p>
+  <a href="#contact" class="btn-white">Start uw project →</a>
 </section>
 
 <section class="contact" id="contact">
-  <div class="contact-grid">
-    <div class="contact-info">
-      <h2>Direct contact opnemen</h2>
-      <p>Voor spoedgevallen kunt u ons 24/7 bellen. Voor offertes en niet-urgente klussen kunt u ook het formulier gebruiken. Meestal reageren we binnen een paar uur.</p>
-
-      <ul class="contact-items">
-        <li>
-          <div class="contact-icon">📞</div>
-          <div class="contact-text">
-            <small>Telefoon (24/7)</small>
-            <strong>06-40077726</strong>
-          </div>
-        </li>
-        <li>
-          <div class="contact-icon">✉</div>
-          <div class="contact-text">
-            <small>E-mail</small>
-            <strong>mdbloodgieters@live.nl</strong>
-          </div>
-        </li>
-        <li>
-          <div class="contact-icon">📍</div>
-          <div class="contact-text">
-            <small>Adres</small>
-            <strong>Woestijnstraat 57, 1448 PE Purmerend</strong>
-          </div>
-        </li>
-        <li>
-          <div class="contact-icon">🕐</div>
-          <div class="contact-text">
-            <small>Openingstijden</small>
-            <strong>24 uur per dag, 7 dagen per week</strong>
-          </div>
-        </li>
-      </ul>
+  <div class="section-label">Contact</div>
+  <h2 class="section-title">Vertel ons over <em>uw project</em></h2>
+  <form class="contact-form" onsubmit="event.preventDefault(); alert('Bedankt! We nemen binnen 24 uur contact met u op.');">
+    <div>
+      <label>Naam</label>
+      <input type="text" required placeholder="Uw naam">
     </div>
-
-    <form class="contact-form" onsubmit="event.preventDefault(); alert('Bedankt! We nemen zo snel mogelijk contact met u op.');">
-      <h3>Offerte aanvragen</h3>
-      <p>Beschrijf uw klus, ontvang binnen 24 uur een vrijblijvende prijsopgave.</p>
-
-      <div class="form-row">
-        <div class="form-group">
-          <label>Naam</label>
-          <input type="text" required placeholder="Uw naam">
-        </div>
-        <div class="form-group">
-          <label>Telefoon</label>
-          <input type="tel" required placeholder="06-...">
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label>E-mail</label>
-        <input type="email" required placeholder="uw@email.nl">
-      </div>
-
-      <div class="form-group">
-        <label>Type klus</label>
-        <select required>
-          <option value="">Selecteer een dienst</option>
-          <option>Lekkage / spoedhulp</option>
-          <option>Verstopping / afvoerreiniging</option>
-          <option>Kraan- of toiletreparatie</option>
-          <option>Nieuwe installatie</option>
-          <option>Iets anders</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label>Omschrijving</label>
-        <textarea placeholder="Beschrijf kort uw situatie..."></textarea>
-      </div>
-
-      <button type="submit" class="form-submit">Verstuur aanvraag →</button>
-    </form>
-  </div>
+    <div>
+      <label>Telefoon</label>
+      <input type="tel" required placeholder="06...">
+    </div>
+    <div class="full">
+      <label>E-mail</label>
+      <input type="email" required placeholder="uw@email.nl">
+    </div>
+    <div class="full">
+      <label>Type bedrijf</label>
+      <select required>
+        <option value="">Selecteer uw branche</option>
+        <option>Loodgieter</option>
+        <option>Schilder</option>
+        <option>Hovenier</option>
+        <option>Elektricien</option>
+        <option>Klusbedrijf</option>
+        <option>Kapper / schoonheid</option>
+        <option>Schoonmaakbedrijf</option>
+        <option>Anders</option>
+      </select>
+    </div>
+    <div class="full">
+      <label>Vertel ons over uw wensen</label>
+      <textarea placeholder="Heeft u al een website? Wat is belangrijk voor u?"></textarea>
+    </div>
+    <div class="full">
+      <button type="submit" class="contact-submit">Verstuur aanvraag →</button>
+    </div>
+  </form>
 </section>
 
 <footer>
-  <div class="footer-inner">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <div class="logo">
-          <span class="logo-mark">M</span>
-          MDB Loodgieters
-        </div>
-        <p>24/7 loodgietersservice in Purmerend en omstreken. Eerlijk vakwerk met garantie, al meer dan 10 jaar de keuze van honderden klanten.</p>
-      </div>
-      <div class="footer-col">
-        <h5>Diensten</h5>
-        <ul>
-          <li><a href="#">Spoedservice</a></li>
-          <li><a href="#">Ontstoppen</a></li>
-          <li><a href="#">Lekkage</a></li>
-          <li><a href="#">Sanitair</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h5>Werkgebied</h5>
-        <ul>
-          <li><a href="#">Purmerend</a></li>
-          <li><a href="#">Edam-Volendam</a></li>
-          <li><a href="#">Waterland</a></li>
-          <li><a href="#">Zaanstreek</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h5>Bedrijf</h5>
-        <ul>
-          <li><a href="#">Over ons</a></li>
-          <li><a href="#">Reviews</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Algemene voorwaarden</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 MDB Loodgieters · KvK 34126295</span>
-      <span>Website door <strong style="color: var(--blue-bright);">Joep | ZIMR Studio</strong></span>
-    </div>
-  </div>
+  <a href="#" class="logo">ZIMR <span>Studio</span></a>
+  <p>© 2026 ZIMR Studio. Websites voor vakmensen in Nederland.</p>
 </footer>
 
 </body>
